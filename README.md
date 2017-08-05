@@ -1,20 +1,27 @@
-# oneinstack
-#来自网址:http://mirrors.linuxeye.com/
+oneinstack  
+来自网址:http://mirrors.linuxeye.com/  
 菜鸟一枚,向大神致敬!
 
-############################################################################# 
+---
+for CentOS/Redhat  
+yum -y install wget screen python  
 
-yum -y install wget screen python   #for CentOS/Redhat
-apt-get -y install wget screen python  #for Debian/Ubuntu
-wget http://aliyun-oss.linuxeye.com/oneinstack-full.tar.gz    #阿里云用户下载
-wget http://mirrors.linuxeye.com/oneinstack-full.tar.gz    #包含源码，国内外均可下载
-wget http://mirrors.linuxeye.com/oneinstack.tar.gz    #不包含源码，建议仅国外主机下载
-tar xzf oneinstack-full.tar.gz
-cd oneinstack    #如果需要修改目录(安装、数据存储、Nginx日志)，请修改options.conf文件
-screen -S oneinstack    #如果网路出现中断，可以执行命令`screen -r oneinstack`重新连接安装窗口
-./install.sh     #请勿sh install.sh或者bash install.sh这样执行
+for Debian/Ubuntu  
+apt-get -y install wget screen python  
+
+wget http://aliyun-oss.linuxeye.com/oneinstack-full.tar.gz         #阿里云用户下载  
+wget http://mirrors.linuxeye.com/oneinstack-full.tar.gz            #包含源码，国内外均可下载  
+wget http://mirrors.linuxeye.com/oneinstack.tar.gz                 #不包含源码，建议仅国外主机下载
+
+tar xzf oneinstack-full.tar.gz  
+cd oneinstack                                                      #如果需要修改目录(安装、数据存储、Nginx日志)，请修改options.conf文件
+
+./install.sh                                                       #请勿sh install.sh或者bash install.sh这样执行  
+
  
-#############################################################################
+screen -S oneinstack                                               #如果网路出现中断，可以执行命令`screen -r oneinstack`重新连接安装窗口
+
+---
 
 
 ssh port :default
@@ -82,7 +89,7 @@ hhvm? 建议n
 # crontab -l
 0 1 * * * cd ~/oneinstack;./backup.sh  > /dev/null 2>&1 &
 ```
-###
+**
 ```
 ./backup.sh # Start backup, You can add cron jobs
    # crontab -l # Examples 
@@ -90,27 +97,35 @@ hhvm? 建议n
 ```
 服务管理:
 
-Nginx/Tengine:
-   service nginx {start|stop|status|restart|reload|configtest}
-MySQL/MariaDB/Percona:
-   service mysqld {start|stop|restart|reload|status}
-PHP:
-   service php-fpm {start|stop|restart|reload|status}
-HHVM:
-   service supervisord {start|stop|status|restart|reload}
-Apache:
-service httpd {start|restart|stop}
-Tomcat:
-service tomcat {start|stop|status|restart}
-Pure-Ftpd:
-   service pureftpd {start|stop|restart|status}
-Redis:
-   service redis-server {start|stop|status|restart|reload}
-Memcached:
-   service memcached {start|stop|status|restart|reload}
+>   Nginx/Tengine:  
+>>   service nginx {start|stop|status|restart|reload|configtest}    
 
-更新版本:
+>MySQL/MariaDB/Percona:  
+ >>  service mysqld {start|stop|restart|reload|status}  
+
+>PHP:  
+ >>  service php-fpm {start|stop|restart|reload|status}   
+
+>HHVM:  
+ >>  service supervisord {start|stop|status|restart|reload}   
+
+>Apache:  
+>>service httpd {start|restart|stop} 
+
+>Tomcat:  
+>>service tomcat {start|stop|status|restart}
+
+>Pure-Ftpd:  
+ >>  service pureftpd {start|stop|restart|status}
+
+>Redis:  
+ >>  service redis-server {start|stop|status|restart|reload} 
+
+>Memcached:  
+ >>  service memcached {start|stop|status|restart|reload}
+
+更新版本:  
 ./upgrade.sh
 
-卸载:
+卸载:  
 ./uninstall.sh

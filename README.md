@@ -4,19 +4,19 @@ oneinstack
 
 ---
 for CentOS/Redhat  
-yum -y install wget screen python  
+>yum -y install wget screen python  
 
 for Debian/Ubuntu  
-apt-get -y install wget screen python  
+>apt-get -y install wget screen python  
 
 wget http://aliyun-oss.linuxeye.com/oneinstack-full.tar.gz         #阿里云用户下载  
 wget http://mirrors.linuxeye.com/oneinstack-full.tar.gz            #包含源码，国内外均可下载  
 wget http://mirrors.linuxeye.com/oneinstack.tar.gz                 #不包含源码，建议仅国外主机下载
 
 tar xzf oneinstack-full.tar.gz  
-cd oneinstack                                                      #如果需要修改目录(安装、数据存储、Nginx日志)，请修改options.conf文件
+cd oneinstack                #如果需要修改目录(安装、数据存储、Nginx日志)，请修改options.conf文件
 
-./install.sh                                                       #请勿sh install.sh或者bash install.sh这样执行  
+./install.sh         #请勿sh install.sh或者bash install.sh这样执行  
 
  
 screen -S oneinstack                                               #如果网路出现中断，可以执行命令`screen -r oneinstack`重新连接安装窗口

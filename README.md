@@ -3,8 +3,8 @@
 菜鸟一枚,向大神致敬!
 
 #############################################################################
-yum -y install wget screen python   #for CentOS/Redhat
-# apt-get -y install wget screen python  #for Debian/Ubuntu
+yum -y install wget screen python   #for CentOS/Redhat
+apt-get -y install wget screen python  #for Debian/Ubuntu
 wget http://aliyun-oss.linuxeye.com/oneinstack-full.tar.gz    #阿里云用户下载
 wget http://mirrors.linuxeye.com/oneinstack-full.tar.gz    #包含源码，国内外均可下载
 wget http://mirrors.linuxeye.com/oneinstack.tar.gz    #不包含源码，建议仅国外主机下载

@@ -1,7 +1,7 @@
 oneinstack  
 来自网址:http://mirrors.linuxeye.com/  
+参考手册：https://oneinstack.com/docs/lnmptstack-image-guide/   
 &ensp;&ensp;&emsp;菜鸟一枚,向大神致敬!   
-参考手册：https://oneinstack.com/docs/lnmptstack-image-guide/
 
 ---
 ### 第一步：

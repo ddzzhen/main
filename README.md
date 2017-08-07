@@ -20,11 +20,6 @@ aliyun用户下载：
 
 不含源码，国外下载：      
 >wget http://mirrors.linuxeye.com/oneinstack.tar.gz
-tar xzf oneinstack-full.tar.gz
-cd oneinstack              #如果需要修改目录(安装、数据存储、Nginx日志)，请修改options.conf文件
-
-./install.sh         #请勿sh install.sh或者bash install.sh这样执行  
-
 
 ### 第三步：
 >tar xzf oneinstack(-full).tar.gz  

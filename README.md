@@ -53,7 +53,8 @@ opcode cache of the php ?  代码缓存组件,建议y
 
 >ioncube? PHP加解密组件,建议n  
 image? 图片处理,建议y   
-ImageMagick  Pure-FTPD? 建议y  
+ImageMagick   
+Pure-FTPD? 建议y  
 phpmyadmin? 建议y  
 redis? 建议y  
 memached? 建议n  
